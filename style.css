@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+body{
+    margin:0;
+    background-color: black;
+    font-family: sans-serif;
+}
+header{
+    background: #ffffff94;
+    text-align: center;
+}
+.conteiner{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 50s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    transform: translatey(250%);
+    text-align: center;
+    background: #ffffff94;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_1280.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://media.istockphoto.com/id/1296568834/pt/foto/sick-woman-lying-in-bed-with-high-fever-cold-flu-and-migraine.jpg?s=612x612&w=0&k=20&c=bCq_q-94euEBOgRnmsYLviJpt8C8wMzAPJJq-1r1TIE=);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_1280.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/19/20/14/water-815271_640.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://media.istockphoto.com/id/184944900/pt/foto/gato-olhando-para-fora-de-uma-janela.jpg?s=612x612&w=0&k=20&c=pV7qrt24c4wq_vcNRRwZn7N5Uof9UERMbEMWcuVoFQI=);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_640.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://media.istockphoto.com/id/1268467595/pt/foto/mid-adult-couple-enjoys-time-together-at-home.jpg?s=612x612&w=0&k=20&c=7b7tYHT_EthKYgz09BsQqXrIzAuPZqhEWTHRvDJVBC0=);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://cdn.pixabay.com/photo/2014/01/22/19/44/flower-field-250016_640.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://media.istockphoto.com/id/883073436/pt/foto/old-open-book.jpg?s=612x612&w=0&k=20&c=sIBwNn5IehxeRlzo4T48iovLQ6zPpu7DrvUKO1nfSeo=);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    margin-top: 100vh;
+    transform: translate(-50%);
+    margin-left: 50%;
+    background: #ffffff94;
+    width: 100%;
+}
